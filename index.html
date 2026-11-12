@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Psicologia das Cores</title>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #fbf8f5;
+  color: #373344;
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  padding: 22px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee8e4;
+}
+
+.logo {
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #a58bc7;
+}
+
+nav a {
+  margin-left: 20px;
+  color: #777285;
+  text-decoration: none;
+}
+
+.hero {
+  padding: 70px 7%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  align-items: center;
+}
+
+h1, h2, h3 {
+  font-family: "Playfair Display", serif;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(40px, 6vw, 70px);
+}
+
+.hero p {
+  color: #777285;
+  font-size: 18px;
+}
+
+.cta {
+  display: inline-block;
+  background: #373344;
+  color: white;
+  padding: 13px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.cta:hover {
+  background: #a58bc7;
+  transform: translateY(-2px);
+}
+
+.art {
+  height: 330px;
+  border-radius: 50%;
+  background: linear-gradient(140deg, #f2e8f8, #f9e6e9, #e7eff8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #d7c5ec;
+  box-shadow: 60px 30px 0 #f4cbdc, -55px 50px 0 #d2e4f4;
+}
+
+section {
+  padding: 60px 7%;
+}
+
+.video-section {
+  background: #f1ebf6;
+  text-align: center;
+}
+
+.video-box {
+  background: linear-gradient(135deg, #d8c9eb, #f2dce7, #dceaf7);
+  padding: 50px 20px;
+  border-radius: 22px;
+  max-width: 850px;
+  margin: auto;
+}
+
+.video-box h3 {
+  font-size: 28px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #f0eae7;
+  border-radius: 18px;
+  padding: 24px;
+}
+
+.card p {
+  color: #777285;
+}
+
+.colors {
+  background: white;
+}
+
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.color-card {
+  padding: 22px;
+  border-radius: 18px;
+  transition: 0.2s;
+}
+
+.color-card:hover {
+  transform: translateY(-5px);
+}
+
+.color-card h3 {
+  margin-top: 0;
+}
+
+.verde { background: #e5f1e6; }
+.rosa { background: #f8e4ec; }
+.azul { background: #e3eef9; }
+.roxo { background: #eee7f8; }
+.amarelo { background: #fbf1d5; }
+.vermelho { background: #f6e1df; }
+.preto { background: #e8e5e9; }
+.branco { background: #f8f8f7; border: 1px solid #eee; }
+.laranja { background: #f9e8dc; }
+
+.note {
+  background: #f8f3ed;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 25px;
+  color: #777285;
+}
+
+footer {
+  text-align: center;
+  padding: 35px;
+  background: #eae3f1;
+  color: #6c627b;
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav a {
+    margin: 8px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .cards, .color-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">cor<span>•</span>mente</div>
+  <nav>
+    <a href="#aula">Videoaula</a>
+    <a href="#aprenda">Aprenda</a>
+    <a href="#cores">Significados</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero">
+  <div>
+    <p>DESIGN • PERCEPÇÃO • CRIATIVIDADE</p>
+    <h1>As cores falam.<br>Você sabe ouvir?</h1>
+    <p>Descubra como as cores despertam emoções, transmitem ideias e transformam a comunicação visual.</p>
+    <a class="cta" href="#aula">Assistir agora ↗</a>
+  </div>
+
+  <div class="art">
+    <div class="circle"></div>
+  </div>
+</section>
+
+<section class="video-section" id="aula">
+  <div class="section-title">
+    <h2>Videoaula: Psicologia das Cores</h2>
+    <p>Aprenda a escolher cores que comunicam sentimentos.</p>
+  </div>
+
+  <div class="video-box">
+    <h3>▶ Psicologia das Cores</h3>
+    <p>Explore como cada cor pode contar uma história.</p>
+    <a class="cta" href="https://youtu.be/kZzvFCGIdUs" target="_blank">
+      Assistir no YouTube ↗
+    </a>
+  </div>
+</section>
+
+<section id="aprenda">
+  <div class="section-title">
+    <h2>O que você vai aprender</h2>
+    <p>Conhecimento prático para estudantes e jovens criativos.</p>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Emoções e sensações</h3>
+      <p>Entenda como as cores podem influenciar a primeira impressão e o clima de uma composição.</p>
+    </div>
+
+    <div class="card">
+      <h3>Escolhas com intenção</h3>
+      <p>Relacione cores, mensagens e identidade visual em cartazes, posts e marcas.</p>
+    </div>
+
+    <div class="card">
+      <h3>Combinações visuais</h3>
+      <p>Explore contrastes, harmonia e paletas para deixar seus projetos mais expressivos.</p>
+    </div>
+  </div>
+</section>
+
+<section class="colors" id="cores">
+  <div class="section-title">
+    <h2>Uma cor, várias sensações</h2>
+    <p>Conheça associações comuns entre cores e sentimentos.</p>
+  </div>
+
+  <div class="color-grid">
+
+    <div class="color-card verde">
+      <h3>Verde</h3>
+      <p>Natureza, equilíbrio, renovação e esperança.</p>
+    </div>
+
+    <div class="color-card rosa">
+      <h3>Rosa</h3>
+      <p>Acolhimento, delicadeza, afeto e romantismo.</p>
+    </div>
+
+    <div class="color-card azul">
+      <h3>Azul</h3>
+      <p>Confiança, tranquilidade, segurança e clareza.</p>
+    </div>
+
+    <div class="color-card roxo">
+      <h3>Roxo</h3>
+      <p>Imaginação, criatividade, mistério e originalidade.</p>
+    </div>
+
+    <div class="color-card amarelo">
+      <h3>Amarelo</h3>
+      <p>Alegria, energia, atenção e otimismo.</p>
+    </div>
+
+    <div class="color-card vermelho">
+      <h3>Vermelho</h3>
+      <p>Paixão, intensidade, urgência e coragem.</p>
+    </div>
+
+    <div class="color-card preto">
+      <h3>Preto</h3>
+      <p>Sofisticação, poder, elegância e formalidade.</p>
+    </div>
+
+    <div class="color-card branco">
+      <h3>Branco</h3>
+      <p>Leveza, simplicidade, paz e espaço.</p>
+    </div>
+
+    <div class="color-card laranja">
+      <h3>Laranja</h3>
+      <p>Entusiasmo, criatividade, calor e sociabilidade.</p>
+    </div>
+
+  </div>
+
+  <div class="note">
+    <strong>Dica de designer:</strong>
+    não existe uma regra universal para o significado das cores.
+    Combine a paleta com a mensagem, o público e a cultura.
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <strong>cor•mente</strong><br>
+  Aprenda a criar com intenção.<br>
+  Psicologia das cores para jovens estudantes e criativos.<br>
+  Feito por Julia Catone
+</footer>
+
+</body>
+</html>
